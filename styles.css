@@ -1,0 +1,227 @@
+
+body {
+	background-color: #ebece4;
+	background-color black;
+	box-sizing: border-box;
+}
+
+.outer-container {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items center;
+	perspective: 270px; ?????????????????????????????
+}
+
+.runway-container {
+	border 1px solid green;
+	display: flex;
+	flex-direction: column;
+}
+
+.outer-container * {
+	transform rotateX(40deg);
+}
+
+.papi-lights-container {
+	border 1px solid purple;
+	position: relative;
+	margin-right: 30px;
+}
+.papi-lights {
+	position: relative;
+	top: 55%;
+	display: flex;
+}
+.white {
+	margin: 2px;
+	background-color: white;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+.red {
+	margin: 2px;
+	background-color: red;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+.runway {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 250px;
+	height: 70vh;
+	border: 5px solid white;
+	border-bottom: 10px dotted green;
+	background-color: gray;
+	color: white;
+	position: relative;
+}
+
+.threshold-markings {
+	font-size: 4rem;
+	margin: 0 15px 0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.runway-number {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 1.8rem;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 5px;
+}
+.smallerR {
+	font-size: 1.5rem;
+}
+
+.middle-section {
+	flex: 1;
+	display: flex;
+}
+
+.column1 {
+	border-right: 6px dashed white;
+	flex: 1;
+}
+
+.column2 {
+	flex: 1;
+}
+
+.approach-lights {
+	display: flex;
+	flex-direction: column;
+	height: 30vh;
+	border 1px solid orange;
+	position: relative;
+	top: -50px;
+}
+
+.reils {
+	display: flex;
+	height: 40%;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.reil-left {
+	flex: 1;
+	margin-right: 2px;
+	border-left: 8px dotted red;
+	border-right: 8px dotted white;
+}
+.reil-right {
+	flex: 1;
+	margin-left: 2px;
+	border-left: 8px dotted white;
+	border-right: 8px dotted red;
+}
+
+.blinking {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+}
+.blink {
+	margin-bottom: 2px;
+	display: flex;
+	justify-content: center;
+}
+.blink1, .blink2, .blink3, .blink4, .blink5, .blink6, .blink7, .blink8 {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: white;
+}
+.marginRight {
+	margin-right: 2px;
+}
+.marginLeft {
+	margin-left: 2px;
+}
+
+.blink1 {
+	 animation: blink 1s linear infinite; 
+	/*  animation: blink 8s steps(8, end) infinite; */
+}
+
+.blink2 {
+	animation: blink 1s linear infinite;
+	animation-delay: .5s;
+}
+.blink3 {
+	animation: blink 1s linear infinite;
+	animation-delay: 1s;
+}
+.blink4 {
+	animation: blink 1s linear infinite;
+	animation-delay: 1.5s;
+}
+.blink5 {
+	animation: blink 1s linear infinite;
+	animation-delay: 2s;
+}
+.blink6{
+	animation: blink 1s linear infinite;
+	animation-delay: 2.5s;
+}
+.blink7 {
+	animation: blink 1s linear infinite;
+	animation-delay: 3s;
+}
+.blink8 {
+	animation: blink 1s linear infinite;
+	animation-delay: 3.5s;
+}
+
+
+
+@keyframes blink {
+	50% { opacity: 0; }
+}
+
+
+
+/*
+.blinking-left {
+	flex: 1;
+	margin-right: 2px;
+	border-right: 10px dotted white;
+}
+.blinking-right {
+	flex: 1;
+	margin-left: 2px;
+	border-left: 10px dotted white;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
